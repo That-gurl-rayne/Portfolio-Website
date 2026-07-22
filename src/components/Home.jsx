@@ -50,27 +50,28 @@ export default function Home({ setPage }) {
               identities, interfaces, and the occasional full-stack app, then edit
               the video that announces it.
             </p>
-            <button
-              onClick={() => setPage("work")}
-              style={{
-                marginTop: 34,
-                background: COLORS.blue,
-                color: COLORS.ink,
-                border: "none",
-                padding: "14px 28px",
-                fontFamily: "'DM Mono', monospace",
-                fontSize: 14,
-                letterSpacing: "0.08em",
-                cursor: "pointer",
-                textTransform: "uppercase",
-              }}
-            >
-              See the work →
-            </button>
+           <button
+  onClick={() => setPage("work")}
+  className="glow-btn"
+  style={{
+    ...GLASS,
+    marginTop: 34,
+    color: COLORS.paper,
+    padding: "14px 28px",
+    fontFamily: "'DM Mono', monospace",
+    fontSize: 14,
+    letterSpacing: "0.08em",
+    cursor: "pointer",
+    textTransform: "uppercase",
+  }}
+>
+  See the work →
+</button>
           </div>
 
           <div style={{ flex: "0 1 300px", minWidth: 220, display: "flex", justifyContent: "center" }}>
             <div
+             className="hover-lift" 
               style={{
                 ...GLASS,
                 width: "100%",
@@ -91,10 +92,12 @@ export default function Home({ setPage }) {
                   background: `linear-gradient(160deg, rgba(79,195,247,0.18), rgba(111,227,224,0.08))`,
                 }}
               />
-              <p style={{ position: "relative", fontFamily: "'DM Mono', monospace", fontSize: 13, color: "#B9E9E7", textAlign: "center", padding: "0 16px", letterSpacing: "0.03em" }}>
+              <p
+              style={{ position: "relative", fontFamily: "'DM Mono', monospace", fontSize: 13, color: "#B9E9E7", textAlign: "center", padding: "0 16px", letterSpacing: "0.03em" }}>
                 YOUR PHOTO HERE
                 <br />
-                <span style={{ fontSize: 11, color: "#8E88A8" }}>upload it and I'll drop it in</span>
+                <span  
+                style={{ fontSize: 11, color: "#8E88A8" }}>upload it and I'll drop it in</span>
               </p>
             </div>
           </div>
@@ -102,6 +105,7 @@ export default function Home({ setPage }) {
       </section>
 
      <section
+    
   style={{
     background: COLORS.indigo,
     padding: "60px 20px",

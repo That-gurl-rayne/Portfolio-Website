@@ -29,7 +29,15 @@ export default function Work() {
               }}
               className="work-row"
             >
-              <div style={{ order: i % 2 === 0 ? 0 : 1, height: 220, borderRadius: 4, background: p.grad }} />
+              <div
+               className="hover-lift" 
+                style={{
+                  order: i % 2 === 0 ? 0 : 1,
+                  height: 220,
+                  borderRadius: 4,
+                  background: p.image ? `url(${p.image}) center/cover no-repeat` : p.grad,
+                }}
+              />
               <div style={{ order: i % 2 === 0 ? 1 : 0, ...GLASS, padding: "24px 26px" }}>
                 <p style={{ fontFamily: "'Fustat', sans-serif", fontSize: 12, letterSpacing: "0.12em", color: COLORS.cyan, marginBottom: 8, textTransform: "uppercase" }}>{p.tag}</p>
                 <h3 style={{ fontFamily: "'Archivo Black', sans-serif", fontSize: 28, color: COLORS.paper, margin: "0 0 10px" }}>{p.title}</h3>
