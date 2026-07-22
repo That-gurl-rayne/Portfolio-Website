@@ -39,7 +39,7 @@ export default function Nav({ page, setPage }) {
             letterSpacing: "0.02em",
           }}
         >
-          YOANNA
+          UDUNNA YOANNA
         </button>
         <div style={{ display: "flex", gap: 22, fontFamily: "'DM Mono', monospace", fontSize: 13, letterSpacing: "0.08em" }}>
           {items.map((it) => (

@@ -22,7 +22,7 @@ export default function Home({ setPage }) {
         <div style={{ maxWidth: 1100, margin: "0 auto", display: "flex", gap: 50, alignItems: "center", flexWrap: "wrap" }}>
           <div style={{ flex: "1 1 420px", minWidth: 280 }}>
             <p style={{ fontFamily: "'DM Mono', monospace", fontSize: 13, letterSpacing: "0.15em", color: COLORS.blue, marginBottom: 18 }}>
-              VOL. 01 — IBADAN, NIGERIA
+              VOL. 01 — Lagos, NIGERIA
             </p>
             <h1 style={{ fontFamily: "'Archivo Black', sans-serif", fontSize: "clamp(42px, 8vw, 92px)", lineHeight: 0.95, margin: 0, letterSpacing: "-0.02em" }}>
               MULTI-
@@ -101,25 +101,30 @@ export default function Home({ setPage }) {
         </div>
       </section>
 
-      <section style={{ background: COLORS.paper, padding: "60px 20px" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-          <p style={{ fontFamily: "'Fustat', sans-serif", fontSize: 13, letterSpacing: "0.12em", color: COLORS.indigo, marginBottom: 20, textTransform: "uppercase" }}>
-            In this issue
-          </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 24 }}>
-            {[
-              { h: "Brand systems", d: "Logos, guidelines, and identities built to hold up across every touchpoint." },
-              { h: "Interfaces", d: "Figma-first UI/UX, from wireframe to shipped product." },
-              { h: "Everything else", d: "React apps, video edits, and writing — the parts that don't fit a category." },
-            ].map((c) => (
-              <div key={c.h} style={{ borderTop: `3px solid ${COLORS.cyan}`, paddingTop: 14 }}>
-                <h3 style={{ fontFamily: "'Archivo Black', sans-serif", fontSize: 20, color: COLORS.ink, margin: "0 0 8px" }}>{c.h}</h3>
-                <p style={{ fontFamily: "'DM Mono', monospace", fontSize: 14, color: "#4A4460", lineHeight: 1.5, margin: 0 }}>{c.d}</p>
-              </div>
-            ))}
-          </div>
+     <section
+  style={{
+    background: COLORS.indigo,
+    padding: "60px 20px",
+  }}
+>
+  <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+    <p style={{ fontFamily: "'Fustat', sans-serif", fontSize: 13, letterSpacing: "0.12em", color: COLORS.cyan, marginBottom: 20, textTransform: "uppercase" }}>
+      In this issue
+    </p>
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 24 }}>
+      {[
+        { h: "Brand systems", d: "Logos, guidelines, and identities built to hold up across every touchpoint." },
+        { h: "Interfaces", d: "Figma-first UI/UX, from wireframe to shipped product." },
+        { h: "Everything else", d: "React apps, video edits, and writing — the parts that don't fit a category." },
+      ].map((c) => (
+        <div key={c.h} style={{ borderTop: `3px solid ${COLORS.cyan}`, paddingTop: 14 }}>
+          <h3 style={{ fontFamily: "'Archivo Black', sans-serif", fontSize: 20, color: COLORS.paper, margin: "0 0 8px" }}>{c.h}</h3>
+          <p style={{ fontFamily: "'DM Mono', monospace", fontSize: 14, color: "#B9B5D6", lineHeight: 1.5, margin: 0 }}>{c.d}</p>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
     </div>
   );
 }
