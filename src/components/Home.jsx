@@ -65,7 +65,7 @@ export default function Home({ setPage }) {
     textTransform: "uppercase",
   }}
 >
-  See the work →
+  See my work →
 </button>
           </div>
 
@@ -97,7 +97,7 @@ export default function Home({ setPage }) {
                 YOUR PHOTO HERE
                 <br />
                 <span  
-                style={{ fontSize: 11, color: "#8E88A8" }}>upload it and I'll drop it in</span>
+                style={{ fontSize: 11, color: "#8E88A8" }}>Go and Snap Fine Picture Jor</span>
               </p>
             </div>
           </div>
