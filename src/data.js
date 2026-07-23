@@ -61,7 +61,7 @@ export const PROJECTS = [
     blurb: "PEN is a creative design tool brand built around the idea of freedom of expression- UI/UX design, Prototyping.",
     tools: ["Figma"],
     grad: `linear-gradient(135deg, ${COLORS.ink}, ${COLORS.blue})`,
-    link: "https://drive.google.com/drive/folders/1UIqJdOGJVhbV6NgRRlMbTSMTmEB7c5u6?usp=drive_link",
+    link: "https://drive.google.com/drive/folders/14tWItWjulqdY8T_SRBlHcU-CS6YeXJmt?usp=drive_link",
     image: "/covers/Pen.png",
   },
    {

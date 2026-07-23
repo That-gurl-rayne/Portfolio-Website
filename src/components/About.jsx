@@ -15,7 +15,7 @@ const QA = [
   },
   {
     q: "Off duty?",
-    a: "Writing, since I was 13. Some music production. Occasionally both at once.",
+    a: "Writing, since I was 13. Some music production. Creative Directing, currently in the fashion scene. I also like to make  drawing videos, and I have a small YouTube channel where I post some of my work.",
   },
 ];
 
